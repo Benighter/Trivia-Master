@@ -63,9 +63,3 @@ We welcome contributions! To contribute:
 ## Author
 
 - **Bennet Nkolele** - Initial work - [GitHub](https://github.com/Benighter)
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
