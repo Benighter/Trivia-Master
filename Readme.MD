@@ -69,10 +69,3 @@ We welcome contributions! To contribute:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
-
-### Note:
-- Ensure you replace the paths in the `Screenshots` section with actual paths to your project screenshots.
-- Adjust the setup and usage instructions based on your specific project structure and functionalities.
-- Include any additional sections or information that are relevant to your project.
-
-This version provides a clean and structured overview of your "Trivia Master" game, making it easy for users and contributors to understand and engage with the project.
