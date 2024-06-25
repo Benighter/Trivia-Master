@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Master</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+    <div id="app">
+        <header>
+            <h1>Trivia Master</h1>
+            <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+        </header>
+
+        <!-- Main Menu -->
+        <div id="main-menu" class="screen">
+            <div class="card">
+                <h2>Welcome to Trivia Master!</h2>
+                <button id="start-game" class="btn btn-primary">Start Game</button>
+                <button id="view-high-scores" class="btn btn-secondary">View High Scores</button>
+                <button id="learn-mode" class="btn btn-secondary">Learn Mode</button>
+            </div>
+        </div>
+
+        <!-- Game Setup -->
+        <div id="game-setup" class="screen hidden">
+            <div class="card">
+                <h2>Game Setup</h2>
+                <select id="category-select" class="select"></select>
+                <select id="difficulty-select" class="select">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <select id="question-count" class="select">
+                    <option value="5">5 Questions</option>
+                    <option value="10">10 Questions</option>
+                    <option value="20">20 Questions</option>
+                    <option value="50">50 Questions</option>
+                </select>
+                <button id="start-game-btn" class="btn btn-primary">Start Game</button>
+            </div>
+        </div>
+
+        <!-- Gameplay -->
+        <div id="gameplay" class="screen hidden">
+            <div class="card">
+                <div id="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <div id="question-container"></div>
+                <div id="answer-container"></div>
+                <button id="resign-button" class="btn btn-secondary">Resign</button>
+            </div>
+        </div>
+
+        <!-- End of Game -->
+        <div id="end-game" class="screen hidden">
+            <div class="card">
+                <h2>Game Over</h2>
+                <div id="final-score"></div>
+                <div id="incorrect-questions"></div>
+                <button id="review-all" class="btn btn-secondary">Review All Questions</button>
+                <input type="text" id="player-name" placeholder="Enter your name" class="input">
+                <button id="save-score" class="btn btn-primary">Save Score</button>
+                <button id="return-to-menu" class="btn btn-secondary">Return to Main Menu</button>
+                <button id="play-again" class="btn btn-primary">Play Again</button>
+            </div>
+        </div>
+
+        <!-- High Scores -->
+        <div id="high-scores" class="screen hidden">
+            <div class="card">
+                <h2>High Scores</h2>
+                <ol id="high-scores-list"></ol>
+                <button id="back-to-menu" class="btn btn-secondary">Back to Main Menu</button>
+            </div>
+        </div>
+
+        <!-- Learn Mode -->
+        <div id="learn-mode-screen" class="screen hidden">
+            <div class="card">
+                <h2>Learn Mode</h2>
+                <select id="learn-category-select" class="select"></select>
+                <select id="learn-difficulty-select" class="select">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <div id="learn-questions-container"></div>
+                <button id="learn-back-to-menu" class="btn btn-secondary">Back to Main Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
